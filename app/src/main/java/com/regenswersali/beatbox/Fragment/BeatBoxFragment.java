@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.SeekBar;
 
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
@@ -44,6 +45,23 @@ public class BeatBoxFragment extends Fragment {
 
         binding.recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 3 ));
         binding.recyclerView.setAdapter(new SoundAdapter(mBeatBox.getSounds()));
+
+        binding.recyclerViewSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                mBeatBox.setSpeedSound((float) progress);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
 
         return binding.getRoot();
     }

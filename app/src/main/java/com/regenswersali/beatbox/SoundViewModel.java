@@ -1,11 +1,14 @@
 package com.regenswersali.beatbox;
 
+import android.widget.SeekBar;
+
 import androidx.databinding.BaseObservable;
 import androidx.databinding.Bindable;
 
 public class SoundViewModel extends BaseObservable {
     private Sound mSound;
     private BeatBox mBeatBox;
+    private SeekBar mSeekBar;
 
     public SoundViewModel(BeatBox beatBox) {
         mBeatBox = beatBox;
@@ -28,4 +31,5 @@ public class SoundViewModel extends BaseObservable {
     public void onButtonClicked() {
         mBeatBox.play(mSound);
     }
+
 }

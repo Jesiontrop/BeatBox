@@ -12,5 +12,4 @@
         android:onClick="@{() -> viewModel.onButtonClicked()}"
         android:text="@{viewModel.title}"
         tools:text="Sound name"/>
-
 </layout>

@@ -1,5 +1,7 @@
 package com.regenswersali.beatbox;
 
+import com.regenswersali.beatbox.databinding.FragmentBeatBoxBinding;
+
 public class Sound {
     private String mAssetPath;
     private String mName;
