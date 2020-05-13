@@ -8,14 +8,11 @@
         <item name="colorAccent">@color/gray</item>
 
         <item name="android:windowBackground">@color/soothing_blue</item>
+        <item name="buttonStyle">@style/BeatBoxButton</item>
     </style>
 
-    <style name="BeatBoxButton">
-        <item name="android:background">@color/red</item>
-    </style>
-
-    <style name="BeatBoxButton.Strong">
-        <item name="android:textStyle">bold</item>
+    <style name="BeatBoxButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_beat_box</item>
     </style>
 
     <style name="BeatBoxSeekBar">
