@@ -1,6 +1,6 @@
 # BeatBox
 
-A small application that plays sounds by clicking
+A small application for android that plays sounds by clicking
 
 ![](images/Main%20Menu.png)
 
